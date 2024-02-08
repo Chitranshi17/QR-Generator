@@ -1,0 +1,110 @@
+*{
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html{
+  font-size: 62.5%;
+}
+/* :root{
+  --bcg-color : #02a879c0;
+} */
+
+/* Navbar */
+/* body{
+  background-color: var(--bcg-color) ;
+} */
+.navbar{
+  width: 100%;
+}
+.navbar h3{
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.container-fluied{
+  width: 100%;
+  height: 95vh;
+}
+.cardC{
+  width: 40%;
+  height: 80%;
+  background-color: white;
+}
+.cardC form{
+  width: 80%;
+  height: 35%;
+}
+form h4{
+  font-size: 2rem;
+}
+form .input-box{
+  width: 90%;
+}
+form .input-box input, form .input-box select , form .input-box button{
+  height: 3.5rem;
+}
+.cardGen{
+  width: 80%;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.cardGen .img{
+  width: 60%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 1rem;
+  padding: 2rem;
+  border: .1rem solid rgba(216, 208, 208, 0.582);
+  /* border-radius: .7rem; */
+}
+.cardGen .img img{
+  width: 90%;
+  height: 100%;
+}
+.cardGen a{
+  width: 28%;
+  height: 12%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width : 900px) {
+  .cardC{
+    width: 70%;
+  }
+}
+
+@media (max-width : 768px) {
+  html{
+    font-size: 40%;
+  }
+  .cardC{
+    width: 70%;
+    height: 55%;
+  }
+}
+
+
+@media (max-width:400px) {
+  html{
+    font-size: 30%;
+  }
+  .cardC{
+    width: 80%;
+    height: 45%;
+  }
+  .cardGen{
+    width: 90%;
+  }
+  .cardGen .img{
+    width: 80%;
+  }
+}

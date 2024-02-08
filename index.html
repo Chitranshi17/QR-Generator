@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar bg-success">
+        <h3 class="text-light py-3 text-center w-100">QR APP</h3>
+      </div>
+    </nav>
+    <main>
+      <div
+        class="container-fluied bg-success-subtle d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="cardC d-flex align-items-center justify-content-center flex-column"
+        >
+          <form
+            action=""
+            class="d-flex align-items-center justify-content-around flex-column"
+          >
+            <h4 class="w-100 text-center text-secondary">QR Code Generator</h4>
+            <div class="input-box">
+              <input
+                type="text"
+                class="form-control"
+                id="input"
+                placeholder="Type your text or URL"
+              />
+            </div>
+            <div class="input-box">
+              <select name="" id="sizes" class="form-control">
+                <option value="">Select the Size of QR</option>
+                <option value="250 x 250">250 x 250</option>
+                <option value="350 x 350">350 x 350</option>
+                <option value="550 x 550">550 x 550</option>
+                <option value="750 x 750">750 x 750</option>
+                <option value="850 x 850">850 x 850</option>
+              </select>
+            </div>
+
+            <div class="input-box">
+              <button
+                class="btn btn-sm btn-outline-success w-100"
+                id="generateBtn"
+              >
+                Generate QR Code
+              </button>
+            </div>
+          </form>
+
+          <div class="cardGen">
+            <div class="img">
+              <img src="./Img/QR-gif.gif" alt="" id="QR" />
+            </div>
+
+            <!-- <a class="btn btn-sm btn-outline-success" id="downloadBtn" download="QR_Code.png">
+              Download
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </body>
+</html>
